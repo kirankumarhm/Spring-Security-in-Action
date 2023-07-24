@@ -134,5 +134,5 @@ Just by creating the project and adding the correct dependencies, Spring Boot ap
 ![](../media/14c4a5532d96a1ce6a5aae42d20e7973.png)
   
 
-curl -u john:12345 http://localhost:8080/hello
+curl -u john:12345 http://localhost:8080/hello  
 Hello!
