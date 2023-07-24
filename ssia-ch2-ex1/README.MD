@@ -26,13 +26,13 @@ Let’s create the first web application project, exposing a REST endpoint by cr
 	@SpringBootApplication  
 	public class Main {  
 		public static void main(String[] args) {  
-			SpringApplication.*run*(Main.class, args);  
+			SpringApplication.run(Main.class, args);  
 		}  
 	}
 ```  
   
 ```
-import org.springframework.web.bind.annotation.GetMapping;  
+	import org.springframework.web.bind.annotation.GetMapping;  
 	import org.springframework.web.bind.annotation.RestController;  
 
 	@RestController  
@@ -67,5 +67,4 @@ And the response to the call:
 		"message":"Unauthorized",
 		"path":"/hello"
 	}
-
 ```
