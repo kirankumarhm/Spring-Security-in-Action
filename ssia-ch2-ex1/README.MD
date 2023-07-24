@@ -5,20 +5,19 @@
 Starting your first project
 
 Let’s create the first web application project, exposing a REST endpoint by creating the project and adding the correct dependencies
-
-
   
     <dependency>  
         <groupId>org.springframework.boot</groupId>  
         <artifactId>spring-boot-starter-security</artifactId>  
     </dependency>  
-    
+
+  
     <dependency>  
         <groupId>org.springframework.boot</groupId>  
         <artifactId>spring-boot-starter-web</artifactId>  
     </dependency>
+  
 
-     
     import org.springframework.boot.SpringApplication;  
     import org.springframework.boot.autoconfigure.SpringBootApplication;  
     
@@ -28,8 +27,8 @@ Let’s create the first web application project, exposing a REST endpoint by cr
             SpringApplication.*run*(Main.class, args);  
         }  
     }
+  
 
-    
     import org.springframework.web.bind.annotation.GetMapping;  
     import org.springframework.web.bind.annotation.RestController;  
     
@@ -42,16 +41,13 @@ Let’s create the first web application project, exposing a REST endpoint by cr
         }  
     }
   
-  
 You’ll see how, without doing much, Spring Security secures this endpoint using HTTP Basic authentication. HTTP Basic is a way a web app authenticates a user by means of a set of credentials (username and password) that the app gets in the header of the HTTP request.
   
 Just by creating the project and adding the correct dependencies, Spring Boot applies default configurations, including a username and a password when you start the application.
   
-
-
 curl http://localhost:8080/hello
 
-![](media/14c4a5532d96a1ce6a5aae42d20e7973.png)
+![](../media/14c4a5532d96a1ce6a5aae42d20e7973.png)
   
 The @RestController annotation registers the bean in the context and tells
   
