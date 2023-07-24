@@ -8,7 +8,7 @@ The main components acting in the authentication process for Spring Security and
 relationships among these. This architecture represents the backbone of implementing
 authentication with Spring Security. We’ll refer to it often throughout the book when discussing different implementations for authentication and authorization.
 
-![alt text](D:\Kiran\Practice\Java\IntelliJ-Workspace\spring_security_in_action_source_code\media\authentication-process.png)
+![alt text](../media/authentication-process.png)
 
 1. The authentication filter delegates the authentication request to the authentication manager and, based on the response, configures the security context.
 2. The authentication manager uses the authentication provider to process authentication.
@@ -79,10 +79,10 @@ ProjectConfig.java
 			return userDetailsService;
 		}
 		/*
-		**The NoOpPasswordEncoder instance treats passwords as plain text. It doesn’t
+		The NoOpPasswordEncoder instance treats passwords as plain text. It doesn’t
     	encrypt or hash them. For matching, NoOpPasswordEncoder only compares
     	the strings using the underlying equals(Object o) method of the String
-    	class.**
+    	class.
 		*/
 	
 		@Bean
