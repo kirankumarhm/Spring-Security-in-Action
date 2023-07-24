@@ -8,19 +8,17 @@ Let’s create the first web application project, exposing a REST endpoint by cr
 
 
   
-   <dependency\>  
-    <groupId\>org.springframework.boot</groupId\>  
-    <artifactId\>spring-boot-starter-security</artifactId\>  
-    </dependency\>  
+    <dependency>  
+        <groupId>org.springframework.boot</groupId>  
+        <artifactId>spring-boot-starter-security</artifactId>  
+    </dependency>  
     
-    <dependency\>  
-    <groupId\>org.springframework.boot</groupId\>  
-    <artifactId\>spring-boot-starter-web</artifactId\>  
-    </dependency\>
+    <dependency>  
+        <groupId>org.springframework.boot</groupId>  
+        <artifactId>spring-boot-starter-web</artifactId>  
+    </dependency>
 
-  
-
-   
+     
     import org.springframework.boot.SpringApplication;  
     import org.springframework.boot.autoconfigure.SpringBootApplication;  
     
@@ -30,9 +28,6 @@ Let’s create the first web application project, exposing a REST endpoint by cr
             SpringApplication.*run*(Main.class, args);  
         }  
     }
-
-  
-  
 
     
     import org.springframework.web.bind.annotation.GetMapping;  
